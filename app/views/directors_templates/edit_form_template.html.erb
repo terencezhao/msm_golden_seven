@@ -1,0 +1,40 @@
+<h1>Edit Photo <%= @director.id %></h1>
+
+<form action="/update_director/<%= @director.id %>">
+  <div>
+    <label for="image_url_input">
+      Image URL
+    </label>
+
+    <input id="image_url_input" type="text" name="image_url" value="<%= @director.image_url %>">
+  </div>
+  
+  <div>
+    <label for="name_input">
+      Name
+    </label>
+
+    <input id="name_input" type="text" name="name" value="<%= @director.name %>">
+  </div>
+
+  <div>
+    <label for="dob_input">
+      DOB
+    </label>
+
+    <input id="dob_input" type="text" name="dob" value="<%= @director.dob %>">
+  </div>
+  
+  <!--<div>-->
+  <!--  <label for="bio_input">-->
+  <!--    Bio-->
+  <!--  </label>-->
+
+  <!--  <input id="bio_input" type="text" name="bio" value="<%= @director.bio %>">-->
+  <!--</div>-->
+  
+
+  <button>
+    Update Director
+  </button>
+</form>
