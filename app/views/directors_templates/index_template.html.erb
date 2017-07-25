@@ -8,7 +8,10 @@
   <% @directors.each do |director| %>
    <div class="thumbnail">
     <img src="<%= director.image_url %>">
-
+    <p><%= director.name %></p>
+    <p><%= director.bio %></p>
+    <p><%= director.dob %></p>
+    <p><%= director.image_url %></p>
     <div class="caption">
       <a href="/directors/<%= director.id %>" class="btn btn-default btn-block">
         Show details
