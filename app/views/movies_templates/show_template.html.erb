@@ -1,0 +1,32 @@
+<h1>Movie Details</h1>
+
+<p>
+  <%= @movie.title %>
+</p>
+
+<img src="<%= @movie.image_url %>">
+
+<p>
+  <%= @movie.year %>
+</p>
+
+<p>
+  <%= @movie.duration %>
+</p>
+
+<p>
+  <%= @movie.description %>
+</p>
+
+
+<a href="/movies" class="btn btn-default">
+  Go back
+</a>
+
+<a href="/movies/<%= @movie.id %>/edit" class="btn btn-default">
+  Edit
+</a>
+
+<a href="/delete_movie/<%= @movie.id %>" class="btn btn-default">
+  Delete
+</a>
