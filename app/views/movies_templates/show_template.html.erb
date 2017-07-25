@@ -6,6 +6,8 @@
 
 <img src="<%= @movie.image_url %>">
 
+<p><%= @movie.image_url %></p>
+
 <p>
   <%= @movie.year %>
 </p>
@@ -24,9 +26,9 @@
 </a>
 
 <a href="/movies/<%= @movie.id %>/edit" class="btn btn-default">
-  Edit
+  Edit mov
 </a>
 
 <a href="/delete_movie/<%= @movie.id %>" class="btn btn-default">
-  Delete
+  Delete movie
 </a>
